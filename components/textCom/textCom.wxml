@@ -1,0 +1,2 @@
+<!--components/textCom/textCom.wxml-->
+<text bindtap="changeParent">我是自组件关联子组件</text>

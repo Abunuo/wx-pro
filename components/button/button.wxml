@@ -1,0 +1,18 @@
+<!--component/button/button.wxml-->
+<view>
+    <view>
+        <text bindtap="childrenTab">{{data.title}}</text>
+    </view>
+    <view>
+        <text>{{title}}</text>
+    </view>
+    <view>
+          <text>{{attr[2]}}</text>
+    </view>
+    <view>
+        <slot name="slot1"></slot>
+    </view>
+    <view>
+        <slot name="slot2"></slot>
+    </view>
+</view>

@@ -1,0 +1,29 @@
+/* pages/demo/demo.wxss */
+.demo-container{
+    width: 100%;
+    height: 120%;
+}
+swiper{
+    width: 100%;
+    height: 480rpx;
+    margin-bottom:20rpx;
+}
+swiper image {
+    width: 100%;
+}
+.scrollView {
+     height: 500rpx;
+    background: #fff;
+}
+.scrollView view {
+    height: 60%;
+}
+.scrollView #red {
+    background: red;
+}
+.scrollView #blue {
+    background: blue;
+}
+.scrollView #green {
+    background: green;
+}

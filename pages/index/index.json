@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "sub-button": "/components/button/button",
+        "text-com":"/components/textCom/textCom"
+    }
+}

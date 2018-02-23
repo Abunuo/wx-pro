@@ -3,8 +3,17 @@
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <image bindtap="bindViewTap" bindlongpress='longPress' class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <view style="color:green;margin-bottom:20rpx;">
+         <navigator url="/pages/text/text">跳转基础内容</navigator>
+         <navigator url="/pages/form/form">跳转表单内容</navigator>
+      </view>
+
+       <sub-button data='{{button}}' title="我是 title" bind:parentTab="parentTab">
+            <text slot="slot1">我是slot</text>
+            <text-com slot="slot2"></text-com>
+       </sub-button>
     </block>
   </view>
   <view class="usermotto">

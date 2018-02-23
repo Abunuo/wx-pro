@@ -1,0 +1,21 @@
+<!--pages/demo/demo.wxml-->
+<view class="demo-container">
+    <swiper indicator-dots="true" indicator-color="#eee" circular='true' indicator-active-color="red" autoplay="true">
+        <block wx:for="{{imgUrls}}"  wx:key="{{index}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image"/>
+             </swiper-item>
+        </block>
+    </swiper>
+
+    <movable-area style="height: 200px;width: 100%;background: #eee;margin:20px auto;">
+        <movable-view style="height: 50px; width: 50px; background: green;" x="0" y="0" direction="all"></movable-view>
+        <movable-view style="height: 50px; width: 50px; background: blue;" x="100" y="100" direction="all"></movable-view>
+    </movable-area>
+
+    <scroll-view class='scrollView' scroll-y scroll-top="{{scrollTop}}" scroll-into-view="{{toView}}" >
+        <view id="red">red</view>
+        <view id="blue">blue</view>
+        <view id="green">green</view>
+    </scroll-view>
+</view>

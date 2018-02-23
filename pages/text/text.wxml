@@ -1,0 +1,8 @@
+<!--pages/text/text.wxml-->
+<view>
+    <icon type='success' size="32"></icon>
+    <text selectable="true" space="emsp">     可选中文本    </text>
+    <text>不可选中文本</text>
+    <rich-text nodes="{{nodes}}"></rich-text>
+    <progress percent="20" show-info />
+</view>

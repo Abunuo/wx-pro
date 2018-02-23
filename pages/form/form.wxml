@@ -1,0 +1,6 @@
+<!--pages/form/form.wxml-->
+<view>
+    <view>
+        <button size='mini' type='primary' open-type='getPhoneNumber' bindgetphonenumber="getNumber">获取手机号</button>
+    </view>
+</view>
