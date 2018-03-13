@@ -8,6 +8,8 @@
       <view style="color:green;margin-bottom:20rpx;">
          <navigator url="/pages/text/text">跳转基础内容</navigator>
          <navigator url="/pages/form/form">跳转表单内容</navigator>
+          <navigator url="/pages/map/map">跳转map</navigator>
+          <navigator url="/pages/jsApi/jsApi">跳转jsApi</navigator>
       </view>
 
        <sub-button data='{{button}}' title="我是 title" bind:parentTab="parentTab">

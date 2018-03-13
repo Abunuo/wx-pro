@@ -1,0 +1,55 @@
+<!--pages/jsApi/jsApi.wxml-->
+<view>
+    <button bindtap='chooseImage' size='mini'>chooseImage</button>
+    <image wx:for="{{imglist}}" src='{{item}}' data-src="{{item}}" wx:key='{{index}}' title="{{index}}" bindtap='previewImage' bindlongtap='imgInfo'></image>
+</view> 
+<view>
+    <button bindtap='getRecorderManagerStart' size='mini'>开始录音</button>
+    <button bindtap='getRecorderManagerStop' size='mini'>结束录音</button>
+    <button bindtap='getRecorderManagerPlay' size='mini'>播放录音</button>
+</view>
+<view>
+    <button bindtap='backgMusic' size='mini'>背景音乐</button>
+</view>
+<view>
+    <button bindtap='locationInfo' size='mini'>获取地址</button>
+    <button bindtap='mapLocation' size='mini'>打开地图获取位置</button>
+    <button bindtap='wx_mapLocation' size='mini'>打开微信地图</button>
+    <view>
+      <text>{{locationInfo}}</text>
+    </view>
+</view>
+<view>
+  <button bindtap='getSystemInfo' size="mini">获取系统信息</button>
+</view>
+<view>
+  <button bindtap='getNetwork' size="mini">获取网络</button>
+  <text>{{network}}</text>
+</view>
+<view>
+  <button bindtap='markCall' size="mini">打电话</button>
+</view>
+<view>
+  <button bindtap='scanCode' size="mini">扫码</button>
+  <text>{{scanCode}}</text>
+</view>
+<view>
+  <button bindtap='clipboard' size="mini">复制下面这段文字</button>
+  <text>零点过十分</text>
+</view>
+<view>
+  <slider bindchanging='changeScreenBright' value="{{screenBright}}"></slider>
+</view>
+<view>
+  <button bindtap='vibrateLong' size='mini' data-type="{{vibrateType}}">{{vibrateType?'长':'短'}}震动</button>
+</view>
+<view>
+  <button bindtap='wifiList' size='mini'>获取 wifi 列表</button>
+  <text wx:for="{{wifiList}}" wx:key="index">{{item}}</text>
+</view>
+<view>
+  <button bindtap='showToast' size='mini'>showToast</button>
+</view>
+<view>
+  <button bindtap='setTabBar' size='mini'>设置 tabBar</button>
+</view>

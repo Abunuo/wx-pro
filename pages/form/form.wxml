@@ -3,4 +3,34 @@
     <view>
         <button size='mini' type='primary' open-type='getPhoneNumber' bindgetphonenumber="getNumber">获取手机号</button>
     </view>
+    <view>
+      <checkbox-group bindchange="checkboxChange">
+        <checkbox value='1'>男生</checkbox>
+        <checkbox value='2'>女生</checkbox>
+      </checkbox-group>
+    </view>
+    <view>
+        <picker mode="selector" range="{{selectRange}}" bindchange="selectorChange">普通选择器{{selector}}</picker>
+        <picker mode="multiSelector" range="{{multiSelectRange}}"  bindchange="multiSelectorChange">多列选择器{{multiSelector}}</picker>
+        <picker mode="time"  bindchange="timeChange">时间选择器{{time}}</picker>
+        <picker mode="date"  bindchange="dateChange">日期选择器{{date}}</picker>
+        <picker mode="region" bindchange="regionChange" >地区选择器{{region}}</picker>
+    </view>
+    <view  style="text-align:center;">
+      <view>{{column1}},{{column2}}</view>
+      <picker-view bindchange="pickerChange" style="width: 100%; height: 100px;" value="{{[1,1]}}">
+        <picker-view-column>
+          <view wx:for="{{column1Arr}}" wx:key="{{index}}">{{item}}</view>
+        </picker-view-column>
+        <picker-view-column>
+          <view wx:for="{{column2Arr}}"  wx:key="{{index}}">{{item}}</view>
+        </picker-view-column>
+      </picker-view>
+    </view>
+    <view>
+      <slider step='5' value='20' activeColor="red" block-color='blue' block-size="16" show-value></slider>
+    </view>
+    <view>
+      <switch color='red'></switch>
+    </view>
 </view>

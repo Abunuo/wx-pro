@@ -1,54 +1,56 @@
 {
-    "pages": [
-        "pages/index/index",
-        "pages/logs/logs",
-        "pages/demo/demo",
-        "pages/text/text",
-        "pages/form/form"
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/demo/demo",
+    "pages/text/text",
+    "pages/form/form",
+    "pages/map/map",
+    "pages/jsApi/jsApi"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 0,
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationStyle": "default"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/2x.png",
+        "selectedIconPath": "/images/3x.png",
+        "_iconPath": "path（81*81）"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "/images/4x.png",
+        "selectedIconPath": "/images/5x.png"
+      },
+      {
+        "pagePath": "pages/demo/demo",
+        "text": "view",
+        "iconPath": "/images/2x.png",
+        "selectedIconPath": "/images/3x.png",
+        "_iconPath": "path（81*81）"
+      }
     ],
-    "window": {
-        "backgroundColor": "#fff",
-        "navigationBarTitleText": "首页",
-        "navigationBarTextStyle": "black",
-        "enablePullDownRefresh": true,
-        "onReachBottomDistance": 0,
-        "backgroundTextStyle": "dark",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationStyle": "default"
-    },
-    "tabBar": {
-        "list": [
-            {
-                "pagePath": "pages/index/index",
-                "text": "首页",
-                "iconPath": "/images/2x.png",
-                "selectedIconPath": "/images/3x.png",
-                "_iconPath": "path（81*81）"
-            },
-            {
-                "pagePath": "pages/logs/logs",
-                "text": "日志",
-                "iconPath": "/images/4x.png",
-                "selectedIconPath": "/images/5x.png"
-            },
-            {
-                "pagePath": "pages/demo/demo",
-                "text": "view",
-                "iconPath": "/images/2x.png",
-                "selectedIconPath": "/images/3x.png",
-                "_iconPath": "path（81*81）"
-            }
-        ],
-        "color": "#f60",
-        "selectedColor": "green",
-        "backgroundColor": "#fff",
-        "position": "bottom"
-    },
-    "debug": false,
-    "networkTimeout": {
-        "request": 60000,
-        "connectSocket": 60000,
-        "uploadFile": 60000,
-        "downloadFile": 60000
-    }
+    "color": "#f60",
+    "selectedColor": "green",
+    "backgroundColor": "#fff",
+    "position": "bottom"
+  },
+  "debug": false,
+  "networkTimeout": {
+    "request": 60000,
+    "connectSocket": 60000,
+    "uploadFile": 60000,
+    "downloadFile": 60000
+  }
 }
